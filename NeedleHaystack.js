@@ -22,7 +22,7 @@ For the purpose of this problem, we will return 0 when needle is an empty string
 */
 
 let strStr = (haystack, needle) => {
-  // Edge case handling
+  // Handle edge case
   if (!needle) {
     return 0;
   };
