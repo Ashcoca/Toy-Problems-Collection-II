@@ -27,12 +27,12 @@ It doesn't matter what values are set beyond the returned length.
 
 */
 
-var removeElement = function(nums, val) {
+const removeElement = (nums, val) => {
   // Working backwards through array
-  for (let i = nums.length; i >= 0; i--) {
-      if (nums[i] === val) {
-        nums.splice(i, 1)
-      }
+  for (let i = nums.length; i >= 0; i -= 1) {
+    if (nums[i] === val) {
+      nums.splice(i, 1);
     }
-    return nums.length;
+  }
+  return nums.length;
 };
