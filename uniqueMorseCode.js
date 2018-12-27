@@ -30,8 +30,7 @@ Each words[i] will have length in range [1, 12].
 words[i] will only consist of lowercase letters.
 */
 
-let uniqueMorseRepresentations = (words) => {
+const uniqueMorseRepresentations = (words) => {
   let morseCode = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."];
   let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-
 };
