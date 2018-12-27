@@ -21,18 +21,18 @@ For the purpose of this problem, we will return 0 when needle is an empty string
 
 */
 
-let strStr = (haystack, needle) => {
+const strStr = (haystack, needle) => {
   // Handle edge case
   if (!needle) {
     return 0;
-  };
+  }
   // Use this variable to make it more readable
-  let diff = haystack.length - needle.length
-  for (let i = 0; i <= diff; i++) {
+  const diff = haystack.length - needle.length;
+  for (let i = 0; i <= diff; i += 1) {
     // Starting from i we see if we slice letters = the length of the needle and see if it matches
     if (needle === haystack.slice(i, i + needle.length)) {
       return i;
     }
-  };
+  }
   return -1;
 };
