@@ -12,5 +12,10 @@ Output: "amanaP :lanac a ,nalp a ,nam A"
 */
 
 const reverseString = (s) => {
-  return s.split('').reverse().join('');
+  // return s.split('').reverse().join('');
+  let reversedString = '';
+  for (let i = s.length; i >= 0; i -= 1) {
+    reversedString += s[i];
+  }
+  return reversedString;
 };
