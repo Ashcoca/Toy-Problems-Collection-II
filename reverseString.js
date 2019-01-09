@@ -14,6 +14,7 @@ Output: "amanaP :lanac a ,nalp a ,nam A"
 const reverseString = (s) => {
   // return s.split('').reverse().join('');
   let reversedString = '';
+  // Iterate backwards through string
   for (let i = s.length; i >= 0; i -= 1) {
     reversedString += s[i];
   }
