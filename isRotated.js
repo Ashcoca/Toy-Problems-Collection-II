@@ -9,10 +9,9 @@ String 2: 'orldhello w'
 */
 
 const isRotated = (str1, str2) => {
-  let newString;
   const helper = (string) => {
     const temp = string[0];
-    newString = string.substring(1);
+    let newString = string.substring(1);
     newString += temp;
     if (newString === str1) {
       return false;
@@ -25,9 +24,9 @@ const isRotated = (str1, str2) => {
   return helper(str1);
 };
 
-let string1 = 'hello world'
-let string2 = 'orldhello w'
+const string1 = 'hello world';
+const string2 = 'orldhello w';
 
-let test = isRotated(string1, string2);
+const test = isRotated(string1, string2);
 
 console.log(test);
