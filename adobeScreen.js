@@ -5,11 +5,17 @@
 
 const twoSum = (arr, key) => {
   // Loop solution
+  if (arr.length === 1) {
+    return false;
+  }
   const starter = arr[0];
   for (let i = 1; i < arr.length; i += 1) {
     if (starter + arr[i] === key) {
       return true;
     }
+  }
+  if (arr.length > 1) {
+    return twoSum(arr.slice(1), key);
   }
   return false;
 };

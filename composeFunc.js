@@ -8,18 +8,11 @@ foo(100). Here, result should be 192.
 
 */
 
-// const compose = (...fns) =>
-//   fns.reduceRight((prevFn, nextFn) =>
-//     (...args) => nextFn(prevFn(...args)),
-//     value => value
-//   );
 
 const compose = (...fns) => {
-  if (fns.length === 1) {
-    return 0;
-  }
-  let curVal = fns[0];
-  return curVal += compose(fns.slice(1))
+  return fns.reduceRight((prevFn, nextFn) => {
+    return (...args) => nextFn(prevFn(...args))
+  }, value => value)
 }
 
 
